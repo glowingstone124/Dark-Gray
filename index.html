@@ -1,0 +1,33 @@
+<head>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body class="dark">
+    <h1 class="logo">Dark-Gray</h1>
+    <div class="content">
+        <button class="themebtn" onclick="toggleTheme()">
+            <img src="static/dark.svg">
+        </button>
+        <div class="search">
+            <img class="search-icon" src="static/seach.svg" onclick="search()">
+            <input class="searchinput" id="query" type="text" placeholder="search" onkeydown="handleKeyDown(event)">
+        </div> 
+        <div class="panelFather">
+            <div class="panel engineFather">
+                <h2>Using Search_Engine</h2>
+                <button class="engines" id="googleBtn" onclick="switchEngine('Google')">Google</button>
+                <button class="engines" id="bingBtn" onclick="switchEngine('Bing')">Bing</button>
+                <button class="engines" id="baiduBtn" onclick="switchEngine('Baidu')">Baidu</button>
+            </div>
+            <div class="panel weather">
+                <h2>Weather_Forecast</h2>
+                <p class="weather-deg" id="weather-deg"></p>
+                <p class="weather-stat" id="weather-stat"></p>
+            </div>
+            <div class="panel github">
+                <h2>Github_Repositories</h2>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="weather.js"></script>
+</body>
