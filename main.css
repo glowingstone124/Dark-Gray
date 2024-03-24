@@ -9,6 +9,9 @@
     align-self: center;
     text-align: center;
 }
+.weather-deg,.weather-stat {
+    color: #595959;
+}
 .darkmode .logo{
     font-size: 6em;
     flex:3;
@@ -96,7 +99,14 @@ body {
 .dark{
     background-color: #292929;
 }
-.dark .logo,.weather-deg,.weather-stat {
+
+.dark .logo {
+    color: rgb(231, 231, 231);
+}
+.dark .weather-deg{
+    color: rgb(231, 231, 231);
+}
+.dark .weather-stat {
     color: rgb(231, 231, 231);
 }
 .dark .engines {
