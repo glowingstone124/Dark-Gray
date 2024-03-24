@@ -109,6 +109,9 @@ body {
 .dark .weather-stat {
     color: rgb(231, 231, 231);
 }
+.dark .weather-loc{ 
+    color: #c3c3c3;
+}
 .dark .engines {
     color: rgb(231, 231, 231);
 }

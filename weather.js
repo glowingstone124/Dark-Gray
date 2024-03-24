@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
             fetch(weatherApiUrl)
                 .then(response => response.json())
                 .then(data => {
+                    const cityName = data.name;
+                    document.getElementById('weather-loc').textContent = `${cityName}`;
                     document.getElementById('weather-deg').textContent = `${(data.main.temp - 273.15).toFixed(1)}°C`;
                     document.getElementById('weather-stat').textContent = `${data.weather[0].description}`
                 })
