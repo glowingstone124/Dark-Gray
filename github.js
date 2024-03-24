@@ -30,6 +30,12 @@ async function updateRepoStarCounts() {
             }
         }
     } else {
+        const repoDetailsDiv = document.createElement('div');
+        repoDetailsDiv.classList.add('repo-details');
+        repoDetailsDiv.innerHTML = `
+            <p>No repositories found. Please add github repositories you want to track in settings.</p>
+        `;
+        githubRepoDiv.appendChild(repoDetailsDiv);
         console.log('No repositories found in localStorage.');
     }
 

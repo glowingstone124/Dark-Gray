@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Dark-Gray",
+    "version": "1.0",
+    "description": "Native HTML welcome page",
+    "permissions": ["tabs"],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+  }
+  
