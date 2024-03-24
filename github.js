@@ -30,6 +30,7 @@ async function updateRepoStarCounts() {
             }
         }
     } else {
+        const githubRepoDiv = document.getElementById('githubRepo');
         const repoDetailsDiv = document.createElement('div');
         repoDetailsDiv.classList.add('repo-details');
         repoDetailsDiv.innerHTML = `
