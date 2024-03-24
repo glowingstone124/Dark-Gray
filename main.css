@@ -222,3 +222,7 @@ body {
 .weathericon{
     max-width: 20px;
 }
+.btn{
+    background-color: #292929;
+    color: #c3c3c3;
+}
