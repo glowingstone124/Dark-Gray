@@ -7,7 +7,7 @@ if (!localStorage.getItem('theme')) {
     themesel = localStorage.getItem('theme');
 }
 function switchEngine(engine) {
-    var searchInput = document.querySelector('.search');
+    var searchInput = document.getElementById('query');
     var googleBtn = document.getElementById('googleBtn');
     var bingBtn = document.getElementById('bingBtn');
     var baiduBtn = document.getElementById('baiduBtn');
@@ -38,25 +38,19 @@ function switchEngine(engine) {
 }
 function search(){
     var query = document.getElementById('query');
+    if (query) {
     switch(nowSearch){
-        case 0:
-            if (query) {
+            case 0:
                 window.open("https://www.google.com/search?q=" + query.value);
-            }
-            break;
-        case 1:
-            if (query) {
+            case 1:
                 window.open("https://www.bing.com/search?q=" + query.value);
-            }
             break;
-        case 2:
-            console.log(2);
-            if (query) {
+            case 2:
                 window.open("https://www.baidu.com/s?wd=" + query.value);
-            }
-            break;
-        default:
-            console.error('NoSuchOpt')
+                break;
+            default:
+                console.error('NoSuchOpt')
+        }
     }
 }
 function handleKeyDown(event) {
