@@ -48,7 +48,7 @@ body {
     border-radius: 50px;
 }
 
-.search input {
+.searchinput {
     border: none;
     border-radius: inherit;
     outline: none;
